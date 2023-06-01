@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#head {
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    color: white;
+}
+
+.tfield {
+    width: 100%;
+    border-radius: 7px;
+    height: 50px;
+}
+
+.area {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.error-message {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ensemble {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-inline: 20px;
+
+}
+
+.premiere {
+    justify-content: center;
+    display: flex;
+}
+
+.deuxieme {
+    justify-content: center;
+    display: flex;
+    height: 150px;
+}
+
+.attente-container,
+.en-cours-container,
+.termine-container {
+    height: 100%;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.attente-container ul,
+.en-cours-container ul,
+.termine-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.attente-container ul li,
+.en-cours-container ul li,
+.termine-container ul li {
+    width: 300px;
+    min-height: 150px;
+    flex-direction: column;
+    background-color: rgb(246, 227, 159);
+    text-align: center;
+    border-radius: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-collapse: collapse;
+    height: 100%;
+    flex-grow: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+#todo-nav-container {
+    background-color: rgb(49, 181, 201);
+    padding: 10px, 0, 10px, 10px;
+    height: 350px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+.dropzone {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+}
+
+li {
+    position: relative;
+    /* Other styles... */
+  }
+  
+  img {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    /* Other styles... */
+  }
+  

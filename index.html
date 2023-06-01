@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header class="container" id="head">
+        <div class="ribbon" id="todo-nav-container">
+            <div id="nav-bar" class="bleu">
+                <nav id="menu">
+                    <h1 class="title">TODO LIST</h1>
+                    <div class="ensemble">
+                        <div class="premiere">
+                            <input class="tfield gray-text" type="text">
+                            <button type="button" class="crayon-button">
+                                <img
+                                    src="Ressources/add.png" width=4% />
+                            </button>
+                        </div>
+                        <div class="deuxieme">
+                            <textarea class="area"></textarea>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="attente-container">
+        <h1 class="word1">En attente</h1>
+            <ul id="drag1" class="dropzone" >
+                <div id="cross">
+                </div>
+            </ul>
+        </div>
+        <div class="en-cours-container">
+            <h1 class="word2">En cours</h1>
+            <ul id="drag2" class="dropzone">
+            </ul>
+        </div>
+        <div class="termine-container">
+            <h1 class="word3">Terminé</h1>
+            <ul id="drag3" class="dropzone">
+            </ul>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/todo-list.js"></script>
+</body>
+</html>
